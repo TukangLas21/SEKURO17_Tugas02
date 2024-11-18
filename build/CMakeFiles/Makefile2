@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/tukanglas/tugas02/SEKURO17_Tugas02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tukanglas/tugas02/SEKURO17_Tugas02
+CMAKE_BINARY_DIR = /home/tukanglas/tugas02/SEKURO17_Tugas02/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/Tugas02.dir/clean
 CMakeFiles/Tugas02.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tugas02.dir/build.make CMakeFiles/Tugas02.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tugas02.dir/build.make CMakeFiles/Tugas02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tukanglas/tugas02/SEKURO17_Tugas02/CMakeFiles --progress-num=1,2 "Built target Tugas02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tukanglas/tugas02/SEKURO17_Tugas02/build/CMakeFiles --progress-num=1,2 "Built target Tugas02"
 .PHONY : CMakeFiles/Tugas02.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tugas02.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tukanglas/tugas02/SEKURO17_Tugas02/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tukanglas/tugas02/SEKURO17_Tugas02/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Tugas02.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tukanglas/tugas02/SEKURO17_Tugas02/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tukanglas/tugas02/SEKURO17_Tugas02/build/CMakeFiles 0
 .PHONY : CMakeFiles/Tugas02.dir/rule
 
 # Convenience name for target.

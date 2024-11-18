@@ -1,3 +1,0 @@
-/home/tukanglas/tugas02/SEKURO17_Tugas02/CMakeFiles/Tugas02.dir
-/home/tukanglas/tugas02/SEKURO17_Tugas02/CMakeFiles/edit_cache.dir
-/home/tukanglas/tugas02/SEKURO17_Tugas02/CMakeFiles/rebuild_cache.dir

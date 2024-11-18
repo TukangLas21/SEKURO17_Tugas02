@@ -1,4 +1,4 @@
-#include <opencv2/opencv.hpp>s
+#include <opencv2/opencv.hpp>
 #include <opencv2/core.hpp>
 #include <opencv2/videoio.hpp>
 #include <opencv2/highgui.hpp>
@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
     // Open video
     VideoCapture video(video_path);
     if (!video.isOpened()) {
-        cerr << "Error: Unable to open video file: " << video_path << endl;
+        cerr << "Error" << endl;
         return -1;
     }
 
@@ -52,7 +52,7 @@ int main(int argc, char **argv) {
         Mat mask1, mask2, mask;
         inRange(hsvframe, lower_bound1, upper_bound1, mask1);
         inRange(hsvframe, lower_bound2, upper_bound2, mask2);
-        mask = mask1 | mask2;
+        mask = mask1 | mask2; // Using bitwise OR to combine both mask
 
         // Generate contours
         vector<vector<Point>> contour_vec;
@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
             }
         }
 
-        // Make bounding rectangle on largest contour
+        // Make bounding rectangle based on largest contour
         if (!largest_contour.empty()) {
             Rect bounding_rect = boundingRect(largest_contour);
             rectangle(frame, bounding_rect, Scalar(255, 0, 0), 3); // Blue bounding rectangle
@@ -79,11 +79,11 @@ int main(int argc, char **argv) {
         ostringstream afterframe;
         afterframe << output_path << "/afterframe_" << i++ << ".jpg";
         if (!imwrite(afterframe.str(), frame)) {
-            cerr << "Error: Could not save processed frame to " << afterframe.str() << endl;
+            cerr << "Error: Could not save" << endl;
             return -1;
         }
     }
 
-    cout << "Frames successfully parsed and saved to: " << output_path << endl;
+    cout << "Frames successfully parsed to: " << output_path << endl;
     return 0;
 }
